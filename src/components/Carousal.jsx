@@ -14,6 +14,7 @@ const Carousal = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
+    arrows:true,
     pauseOnHover: false,
     responsive: [
       {
@@ -103,8 +104,8 @@ const Carousal = () => {
           arr.map((val) => {
             return (
               <>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                  <img class="w-full" src={val.image} alt="Sunset in the mountains" />
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-8">
+                  <img class="w-full" src={val.image} alt="" />
                   <div class="px-6 py-4">
                     <div class="font-bold text-xl mb-2">{val.title}</div>
                     <p class="text-gray-700 text-base">
